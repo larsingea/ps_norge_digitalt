@@ -146,13 +146,6 @@
         "level": "dataset",
         "levelDescription": "OGC API-Features fra Norges geologiske undersøkelse"
       }
-    },
-    {
-      "specificationScope": {
-        "scopeIdentification": "Filleveranser basert på UML-modell",
-        "level": "dataset",
-        "levelDescription": "Filleveranser basert på UML-modell"
-      }
     }
   ],
   "referenceSystemSection": {

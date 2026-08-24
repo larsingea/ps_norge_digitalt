@@ -1,6 +1,6 @@
 ---
 title: "Bunnfellingsområder"
-updated: "2026-08-19"
+updated: "2026-08-24"
 organization: "Norges geologiske undersøkelse"
 logo: "https://register.geonorge.no/data/organizations/970188290_NGU_hovedlogo_svart.svg thumbnail.png"
 ---
@@ -34,6 +34,16 @@ Denne produktspesifikasjonen beskriver datasettet og hvordan det skal forstås a
 > **Endret dato:** 2025-03-14<br>
 > **Språk:** nor<br>
 > **Kontaktinformasjon:** Norges geologiske undersøkelse, [sigrid.elvenes@ngu.no](mailto:sigrid.elvenes@ngu.no)
+
+## Termer og definisjoner
+**Begrep** — kort forklaring
+
+## Forkortelser
+
+| Forkortelse | Betyr |
+|-------------|-------|
+| SOSI | Samordnet Opplegg for Stedfestet Informasjon |
+| GML | Geography Markup Language |
 
 ## Om produktet Bunnfellingsområder
 
@@ -81,12 +91,6 @@ Datasettet kan blant annet anvendes som underlag i overordnet areal- og miljøpl
 
 **Nivåbeskrivelse**: OGC API-Features fra Norges geologiske undersøkelse
 
-### Filleveranser basert på UML-modell
-
-**Nivå**: dataset
-
-**Nivåbeskrivelse**: Filleveranser basert på UML-modell
-
 ## Datainnhold og struktur
 
 
@@ -100,16 +104,6 @@ Datasettet kan blant annet anvendes som underlag i overordnet areal- og miljøpl
 
 
 ➡️ [Se full datamodell for omfang "Bunnfellingsomrader" (diagram per pakke og objektkatalog)](bunnfellingsomrader/objektkatalog.html)
-
-### Datamodell - Filleveranser basert på UML-modell
-
-
-
-<a href="filleveranser-basert-pa-uml-modell/filleveranser-basert-pa-uml-modell_feature_catalogue.png" title="Klikk for stor visning"><img src="filleveranser-basert-pa-uml-modell/filleveranser-basert-pa-uml-modell_feature_catalogue.png" alt="Datamodell Filleveranser basert på UML-modell" style="max-width: 100%; height: auto;" /></a>
-
-
-
-➡️ [Se full datamodell for omfang "Filleveranser basert på UML-modell" (diagram per pakke og objektkatalog)](filleveranser-basert-pa-uml-modell/objektkatalog.html)
 
 ## Referansesystem
 
