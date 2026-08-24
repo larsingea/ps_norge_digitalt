@@ -1,0 +1,51 @@
+{
+  "$comment": "JSON Schema document created by ShapeChange - https://shapechange.net/",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/ogcapifeaturesdyrkbarjord/ogc-api-features-dyrkbar-jord.json",
+  "definitions": {
+    "Dyrkbar jord": {
+      "type": "object",
+      "properties": {
+        "geometry": {
+          "$ref": "https://geojson.org/schema/Polygon.json"
+        },
+        "@type": {
+          "type": "string"
+        },
+        "id": {
+          "type": "string"
+        },
+        "lokalId": {
+          "type": "integer"
+        },
+        "dyrkbarJord": {
+          "type": "integer"
+        },
+        "myrTorv": {
+          "type": "integer"
+        },
+        "verneform": {
+          "type": "string"
+        },
+        "planeringsjord": {
+          "type": "integer"
+        },
+        "fulldyrka2008": {
+          "type": "integer"
+        },
+        "årsversjon": {
+          "type": "integer"
+        },
+        "informasjon": {
+          "type": "string"
+        },
+        "områdeId": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "@type"
+      ]
+    }
+  }
+}

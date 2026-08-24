@@ -137,9 +137,9 @@
     },
     {
       "specificationScope": {
-        "scopeIdentification": "Datamodell fra GPKG",
+        "scopeIdentification": "OGC API Features Dyrkbar jord",
         "level": "dataset",
-        "levelDescription": "Tom GPKG - mal for dyrkbar jord"
+        "levelDescription": "Landsdekkende datasettet som viser arealer som per i dag ikke er fulldyrka jord, men som ut fra agronomiske perspektiv kan dyrkes opp til fulldyrka jord, og som holder kravene til klima og jordkvalitet for plantedyrking."
       }
     }
   ],
@@ -359,7 +359,7 @@
   "metadataSection": {
     "metadataStandard": "ISO19115",
     "metadataStandardVersion": "2003",
-    "metadataDate": "2026-08-18",
+    "metadataDate": "2026-08-24",
     "language": "nor",
     "contact": {
       "organizationName": "Geovekst",

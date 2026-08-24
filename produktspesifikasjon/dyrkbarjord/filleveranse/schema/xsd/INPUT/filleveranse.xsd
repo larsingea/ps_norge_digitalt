@@ -2,13 +2,20 @@
   <import namespace="http://www.interactive-instruments.de/ShapeChange/AppInfo" schemaLocation="https://shapechange.net/resources/schema/ShapeChangeAppinfo.xsd"/>
   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
   <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
-  <element name="ArealressursFlate" substitutionGroup="filleveranse:DyrkbarJord_Fellesegenskaper" type="filleveranse:ArealressursFlateType"/>
+  <element name="ArealressursFlate" substitutionGroup="filleveranse:DyrkbarJord_Fellesegenskaper" type="filleveranse:ArealressursFlateType">
+    <annotation>
+      <documentation>et sammenhengende areal som er tilordnet de samme egenskapsverdiene i henhold til et arealressursklassifikasjonssystem
+-- Definition --
+a continuous area which has been assigned the same attribute values in accordance with an area resource classification system</documentation>
+    </annotation>
+  </element>
   <complexType name="ArealressursFlateType">
     <complexContent>
       <extension base="filleveranse:DyrkbarJord_FellesegenskaperType">
         <sequence>
           <element name="dyrkbarJord" type="filleveranse:DyrkbarJordType">
             <annotation>
+              <documentation>Dyrkbar jord er areal som per i dag ikke er fulldyrka, men som ved oppdyrking kan settes i en slik stand at de holder kravene til fulldyrka jord, ut fra agronomiske perspektiv kan dyrkes opp til fylldyrka jord, og som holder kravene til klima og jordkvalitet for plantedyrking.  Informasjon om dyrkbar jord på arealressurser av typen overflatedyrka jord, innmarksbeite, skogareal, åpen fastmark og myr.</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">ARDYRKING</sc:taggedValue>
               </appinfo>
@@ -16,6 +23,7 @@
           </element>
           <element name="fulldyrka2008" type="filleveranse:Fulldyrka2008Type">
             <annotation>
+              <documentation>Arealer som var fulldyrka jord i DMK-basen i 2008, men ikke er fulldyrka lenger</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">FULLDYRKA2008</sc:taggedValue>
               </appinfo>
@@ -23,6 +31,7 @@
           </element>
           <element name="myrTorv" type="filleveranse:MyrTorvType">
             <annotation>
+              <documentation>Dyrkbar jord er delt i dyrkbar myr, dyrkbar torvmark og dyrkbar mineraljord. Informasjon om grunnforhold er hentet fra AR5</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">MYRTORV</sc:taggedValue>
               </appinfo>
@@ -30,14 +39,22 @@
           </element>
           <element name="område" type="gml:SurfacePropertyType">
             <annotation>
+              <documentation>objektets utstrekning
+-- Definition --
+area over which an object extends</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">Flate</sc:taggedValue>
               </appinfo>
             </annotation>
           </element>
-          <element name="planeringsjord" type="filleveranse:PlaneringsjordType"/>
+          <element name="planeringsjord" type="filleveranse:PlaneringsjordType">
+            <annotation>
+              <documentation>Areal ansett som planeringsjord og som ligger i kartlagte eller modellerte ravineområder Areal som historisk er kartlagt som dyrkbar jord, forutsatt bakkeplanering</documentation>
+            </annotation>
+          </element>
           <element name="verneform" type="filleveranse:VerneformType">
             <annotation>
+              <documentation>Informasjon om arealet ligger i en nasjonalpark eller et naturreservat</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">VERNEFORM</sc:taggedValue>
               </appinfo>
@@ -45,6 +62,7 @@
           </element>
           <element name="årsversjon" type="integer">
             <annotation>
+              <documentation>Årstall for årsversjon av Dyrkbar jord datasettet</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">ÅRSVERSJON</sc:taggedValue>
               </appinfo>
@@ -62,13 +80,22 @@
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
-  <element name="ArealressursGrense" substitutionGroup="gml:AbstractFeature" type="filleveranse:ArealressursGrenseType"/>
+  <element name="ArealressursGrense" substitutionGroup="gml:AbstractFeature" type="filleveranse:ArealressursGrenseType">
+    <annotation>
+      <documentation>avgrensing for en eller to arealressursflater
+-- Definition --
+delimitation for one or two area resource surfaces</documentation>
+    </annotation>
+  </element>
   <complexType name="ArealressursGrenseType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="grense" type="gml:CurvePropertyType">
             <annotation>
+              <documentation>forløp som følger overgang mellom ulike fenomener
+-- Definition --
+course follwing the transition between different real world phenomena</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">Kurve</sc:taggedValue>
               </appinfo>
@@ -86,11 +113,25 @@
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
   <simpleType name="DyrkbarJordType">
+    <annotation>
+      <documentation>Informasjon om dyrkbar jord på overflatedyrka jord, Innmarksbeite, Skog, Åpen fastmark og Myr
+-- Definition - -
+Information concerning arable land on surface cultivated land, infield pasturelands, unforested land, and in marshes and forests</documentation>
+    </annotation>
     <union memberTypes="filleveranse:DyrkbarJordEnumerationType filleveranse:DyrkbarJordOtherType"/>
   </simpleType>
   <simpleType name="DyrkbarJordEnumerationType">
+    <annotation>
+      <documentation>Informasjon om dyrkbar jord på overflatedyrka jord, Innmarksbeite, Skog, Åpen fastmark og Myr
+-- Definition - -
+Information concerning arable land on surface cultivated land, infield pasturelands, unforested land, and in marshes and forests</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="Dyrkbar Jord"/>
+      <enumeration value="Dyrkbar Jord">
+        <annotation>
+          <documentation>Areal som egner seg for oppdyrking til fulldyrka jord.</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="DyrkbarJordOtherType">
@@ -98,13 +139,19 @@
       <pattern value="other: \w{2,}"/>
     </restriction>
   </simpleType>
-  <element abstract="true" name="DyrkbarJord_Fellesegenskaper" substitutionGroup="gml:AbstractFeature" type="filleveranse:DyrkbarJord_FellesegenskaperType"/>
+  <element abstract="true" name="DyrkbarJord_Fellesegenskaper" substitutionGroup="gml:AbstractFeature" type="filleveranse:DyrkbarJord_FellesegenskaperType">
+    <annotation>
+      <documentation>abstrakt objekttype som bærer sentrale egenskaper som er anbefalt for bruk i produktspesifikasjoner.
+Merknad: Disse egenskapene skal derfor ikke modelleres inn i fagområdemodeller.</documentation>
+    </annotation>
+  </element>
   <complexType abstract="true" name="DyrkbarJord_FellesegenskaperType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="identifikasjon" type="filleveranse:IdentifikasjonPropertyType">
             <annotation>
+              <documentation>unik identifikasjon av et objekt</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">IDENT</sc:taggedValue>
               </appinfo>
@@ -112,6 +159,7 @@
           </element>
           <element name="informasjon" type="string">
             <annotation>
+              <documentation>Informasjon om brukte datakilder</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">INFORMASJON</sc:taggedValue>
               </appinfo>
@@ -119,6 +167,8 @@
           </element>
           <element minOccurs="0" name="kopidata" type="filleveranse:KopidataPropertyType">
             <annotation>
+              <documentation>angivelse av at objektet er hentet fra et kopidatasett og ikke fra originaldatasettet
+Merknad: Inneholder informasjon om når kopidatasettet ble kopiert fra originaldatasettet og hvem som er originaldataansvarlig</documentation>
               <appinfo>
                 <sc:taggedValue tag="SOSI_navn">KOPIDATA</sc:taggedValue>
               </appinfo>
@@ -136,12 +186,26 @@
     <attributeGroup ref="gml:OwnershipAttributeGroup"/>
   </complexType>
   <simpleType name="Fulldyrka2008Type">
+    <annotation>
+      <documentation>Arealer som var fulldyrka jord i DMK-basen i 2008, men ikke er fulldyrka lenger</documentation>
+    </annotation>
     <union memberTypes="filleveranse:Fulldyrka2008EnumerationType filleveranse:Fulldyrka2008OtherType"/>
   </simpleType>
   <simpleType name="Fulldyrka2008EnumerationType">
+    <annotation>
+      <documentation>Arealer som var fulldyrka jord i DMK-basen i 2008, men ikke er fulldyrka lenger</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="Fulldyrka 2008"/>
-      <enumeration value="Ikke fulldyrka"/>
+      <enumeration value="Fulldyrka 2008">
+        <annotation>
+          <documentation>Arealtilstand er endret etter 2008 som følge av ajourhold av AR5</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Ikke fulldyrka">
+        <annotation>
+          <documentation>Arealtilstand er ikke endret etter 2008 ved ajourhold av AR5.</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="Fulldyrka2008OtherType">
@@ -154,6 +218,8 @@
     <sequence>
       <element name="lokalId" type="string">
         <annotation>
+          <documentation>lokal identifikator av et objekt
+Merknad: Det er dataleverendørens ansvar å sørge for at den lokale identifikatoren er unik innenfor navnerommet.</documentation>
           <appinfo>
             <sc:taggedValue tag="SOSI_navn">LOKALID</sc:taggedValue>
           </appinfo>
@@ -161,6 +227,9 @@
       </element>
       <element name="navnerom" type="string">
         <annotation>
+          <documentation>navnerom som unikt identifiserer datakilden til et objekt, anbefales å være en http-URI
+Eksempel: http://data.geonorge.no/SentraltStedsnavnsregister/1.0
+Merknad : Verdien for nanverom vil eies av den dataprodusent som har ansvar for de unike identifikatorene og må være registrert i data.geonorge.no eller data.norge.no</documentation>
           <appinfo>
             <sc:taggedValue tag="SOSI_navn">NAVNEROM</sc:taggedValue>
           </appinfo>
@@ -178,6 +247,12 @@
     <sequence>
       <element name="kopidato" type="date">
         <annotation>
+          <documentation>dato når objektet ble kopiert fra originaldatasettet
+
+Merknad:
+Er en del av egenskapen Kopidata. Brukes i de tilfeller hvor en kopidatabase brukes til distribusjon.
+Å kopiere et datasett til en kopidatabase skal ikke føre til at Oppdateringsdato blir endret.
+Eventuell redigering av data i et kopidatasett medfører ny Oppdateringsdato, Datafangstdato og/eller Verifiseringsdato.</documentation>
           <appinfo>
             <sc:taggedValue tag="SOSI_navn">KOPIDATO</sc:taggedValue>
           </appinfo>
@@ -185,6 +260,9 @@
       </element>
       <element name="områdeId" type="integer">
         <annotation>
+          <documentation>identifikasjon av område som dataene dekker
+
+Merknad: Kan angis med kommunenummer eller fylkesnummer. Disse bør spesifiseres nærmere.</documentation>
           <appinfo>
             <sc:taggedValue tag="SOSI_navn">OMRÅDEID</sc:taggedValue>
           </appinfo>
@@ -192,6 +270,7 @@
       </element>
       <element name="originalDatavert" type="string">
         <annotation>
+          <documentation>ansvarlig etat for forvaltning av data</documentation>
           <appinfo>
             <sc:taggedValue tag="SOSI_navn">ORIGINALDATAVERT</sc:taggedValue>
           </appinfo>
@@ -205,13 +284,31 @@
     </sequence>
   </complexType>
   <simpleType name="MyrTorvType">
+    <annotation>
+      <documentation>Dyrkbar jord er delt i dyrkbar myr, dyrkbar torvmark og dyrkbar mineraljord. Informasjon om grunnforhold er hentet fra AR5</documentation>
+    </annotation>
     <union memberTypes="filleveranse:MyrTorvEnumerationType filleveranse:MyrTorvOtherType"/>
   </simpleType>
   <simpleType name="MyrTorvEnumerationType">
+    <annotation>
+      <documentation>Dyrkbar jord er delt i dyrkbar myr, dyrkbar torvmark og dyrkbar mineraljord. Informasjon om grunnforhold er hentet fra AR5</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="Mineraljord dyrkbar mineraljord"/>
-      <enumeration value="Myr dyrkbar myr"/>
-      <enumeration value="Torvmark dyrkbar torvmark"/>
+      <enumeration value="Mineraljord dyrkbar mineraljord">
+        <annotation>
+          <documentation>Dyrkbar jord på areal som hverken er registrert med grunnforhold organiske jordlag eller myr i AR5</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Myr dyrkbar myr">
+        <annotation>
+          <documentation>Dyrkbar jord på areal som er registrert som myr i AR5</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Torvmark dyrkbar torvmark">
+        <annotation>
+          <documentation>Dyrkbar jord på areal med grunnforhold organiske jordlag i AR5 men som ikke er registrert som myr i AR5</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="MyrTorvOtherType">
@@ -220,13 +317,31 @@
     </restriction>
   </simpleType>
   <simpleType name="PlaneringsjordType">
+    <annotation>
+      <documentation>Areal ansett som planeringsjord og som ligger i kartlagte eller modellerte ravineområder. Areal som historisk er kartlagt som dyrkbar jord, forutsatt bakkeplanering</documentation>
+    </annotation>
     <union memberTypes="filleveranse:PlaneringsjordEnumerationType filleveranse:PlaneringsjordOtherType"/>
   </simpleType>
   <simpleType name="PlaneringsjordEnumerationType">
+    <annotation>
+      <documentation>Areal ansett som planeringsjord og som ligger i kartlagte eller modellerte ravineområder. Areal som historisk er kartlagt som dyrkbar jord, forutsatt bakkeplanering</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="Ikke planeringsjord"/>
-      <enumeration value="Kartlagt"/>
-      <enumeration value="Modellert"/>
+      <enumeration value="Ikke planeringsjord">
+        <annotation>
+          <documentation>Areal som ikke er ansett som planeringsjord</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Kartlagt">
+        <annotation>
+          <documentation>Dyrkbar jord på areal som historisk er kartlagt som planeringsjord og som ligger i kartlagte ravineområder</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Modellert">
+        <annotation>
+          <documentation>Dyrkbar jord på areal som historisk er kartlagt som planeringsjord og som ligger i modellerte ravineområder</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="PlaneringsjordOtherType">
@@ -235,13 +350,31 @@
     </restriction>
   </simpleType>
   <simpleType name="VerneformType">
+    <annotation>
+      <documentation>Informasjon om arealet ligger i en nasjonalpark eller et naturreservat</documentation>
+    </annotation>
     <union memberTypes="filleveranse:VerneformEnumerationType filleveranse:VerneformOtherType"/>
   </simpleType>
   <simpleType name="VerneformEnumerationType">
+    <annotation>
+      <documentation>Informasjon om arealet ligger i en nasjonalpark eller et naturreservat</documentation>
+    </annotation>
     <restriction base="string">
-      <enumeration value="Ikke relevant"/>
-      <enumeration value="Verneform nasjonalpark"/>
-      <enumeration value="Verneform naturreservat"/>
+      <enumeration value="Ikke relevant">
+        <annotation>
+          <documentation>Det er ikke kartlagt Nasjonalpark eller Naturreservat på lokaliteten.</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Verneform nasjonalpark">
+        <annotation>
+          <documentation>Dyrkbar jord i nasjonalpark</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="Verneform naturreservat">
+        <annotation>
+          <documentation>Dyrkbar jord i naturreservat</documentation>
+        </annotation>
+      </enumeration>
     </restriction>
   </simpleType>
   <simpleType name="VerneformOtherType">
