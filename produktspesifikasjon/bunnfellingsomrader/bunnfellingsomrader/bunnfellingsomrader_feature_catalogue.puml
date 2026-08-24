@@ -35,7 +35,7 @@ package "Objekttyper" {
     + identifikasjon [1..1] : Identifikasjon
     + datauttaksdato [1..1] : DateTime
     + førsteDigitaliseringsdato [0..1] : DateTime
-    + sedKornstørrelse [1..1] : CharacterString
+    + sedKornstørrelse [1..1] : SedKornstørrelse
     + sedKornstørrelseNavn [1..1] : CharacterString
 
     ..Geometri..
@@ -48,11 +48,11 @@ package "Objekttyper" {
     + førsteDigitaliseringsdato [0..1] : DateTime
     + oppdateringsdato [0..1] : DateTime
     + kvalitet [1..1] : Posisjonskvalitet
-    + medium [1..1] : CharacterString
+    + medium [1..1] : Medium
     + opphav [1..1] : CharacterString
-    + geolPavisningstype [0..1] : CharacterString
+    + geolPavisningstype [0..1] : GeolPavisningstype
     + geolPavisningstypeNavn [0..1] : CharacterString
-    + temakvalitet [0..1] : CharacterString
+    + temakvalitet [0..1] : Temakvalitet
     + identifikasjon [0..1] : Identifikasjon
 
     ..Geometri..
@@ -65,11 +65,11 @@ package "Objekttyper" {
     + førsteDigitaliseringsdato [0..1] : DateTime
     + oppdateringsdato [0..1] : DateTime
     + kvalitet [1..1] : Posisjonskvalitet
-    + medium [1..1] : CharacterString
+    + medium [1..1] : Medium
     + opphav [1..1] : CharacterString
-    + geolPavisningstype [0..1] : CharacterString
+    + geolPavisningstype [0..1] : GeolPavisningstype
     + geolPavisningstypeNavn [0..1] : CharacterString
-    + temakvalitet [0..1] : CharacterString
+    + temakvalitet [0..1] : Temakvalitet
     + identifikasjon [0..1] : Identifikasjon
 
     ..Geometri..
@@ -83,7 +83,7 @@ package "Objekttyper" {
   }
 
   class Posisjonskvalitet <<dataType>> {
-    + målemetode [0..1] : CharacterString
+    + målemetode [0..1] : Målemetode
     + målemetodeNavn [0..1] : CharacterString
     + nøyaktighet [0..1] : Integer
   }
