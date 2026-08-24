@@ -240,7 +240,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>SedKornstørrelse</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -456,7 +456,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -535,7 +535,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Medium</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -589,7 +589,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeolPavisningstype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -643,7 +643,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Temakvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -926,7 +926,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Målemetode</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1005,7 +1005,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Medium</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1059,7 +1059,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>GeolPavisningstype</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1113,7 +1113,7 @@ Egenskaper
     </tr>
     <tr>
       <th scope="row">Type:</th>
-      <td>string</td>
+      <td>Temakvalitet</td>
     </tr>
     <tr>
       <th scope="row">Tillatte verdier:</th>
@@ -1220,7 +1220,7 @@ Egenskaper
 
 ### Kodelister
 
-#### «Enumeration» string
+#### «Enumeration» SedKornstørrelse
 
 Koder
 
@@ -1418,6 +1418,27 @@ Koder
       <td></td>
       <td>95</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Målemetode
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
     <tr>
       <td></td>
       <td></td>
@@ -1441,12 +1462,27 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>18</td>
     </tr>
     <tr>
       <td></td>
       <td></td>
       <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
     </tr>
     <tr>
       <td></td>
@@ -1462,6 +1498,11 @@ Koder
       <td></td>
       <td></td>
       <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>30</td>
     </tr>
     <tr>
       <td></td>
@@ -1502,6 +1543,11 @@ Koder
       <td></td>
       <td></td>
       <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>40</td>
     </tr>
     <tr>
       <td></td>
@@ -1551,6 +1597,11 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>51</td>
     </tr>
     <tr>
@@ -1577,6 +1628,11 @@ Koder
       <td></td>
       <td></td>
       <td>56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>60</td>
     </tr>
     <tr>
       <td></td>
@@ -1626,6 +1682,11 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>71</td>
     </tr>
     <tr>
@@ -1661,12 +1722,22 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>81</td>
     </tr>
     <tr>
       <td></td>
       <td></td>
       <td>82</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>90</td>
     </tr>
     <tr>
       <td></td>
@@ -1691,6 +1762,11 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>96</td>
     </tr>
     <tr>
@@ -1703,6 +1779,22 @@ Koder
       <td></td>
       <td>99</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Medium
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>B</td>
       <td></td>
@@ -1763,10 +1855,81 @@ Koder
       <td></td>
       <td></td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» GeolPavisningstype
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>14</td>
+    </tr>
     <tr>
       <td></td>
       <td></td>
       <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>24</td>
     </tr>
     <tr>
       <td></td>
@@ -1801,7 +1964,32 @@ Koder
     <tr>
       <td></td>
       <td></td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
       <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
     </tr>
     <tr>
       <td></td>
@@ -1823,6 +2011,22 @@ Koder
       <td></td>
       <td>9</td>
     </tr>
+  </tbody>
+</table>
+
+#### «Enumeration» Temakvalitet
+
+Koder
+
+<table class="code-list-table">
+  <thead>
+    <tr>
+      <th>Kodenavn:</th>
+      <th>Definisjon:</th>
+      <th>Kodeverdi:</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>dårlig</td>
       <td></td>
