@@ -8,7 +8,9 @@ scopes:
   url: https://sosi.geonorge.no/svn/SOSI/SOSI Del 3/Skog og landskap/Produktspesifikasjon DyrkbarJord-20250530 Utkast.xml
   generator: xmi
   description: Filer levert som FGDB, SOSI og Shape, gjennom Geonorge kartkatalog og massiv-klient, samt Atom Feed.
-- name: Datamodell fra GPKG
-  url: https://arnevik.net/test/FT_OK.gpkg
-  generator: geopackage
-  description: Tom GPKG - mal for dyrkbar jord
+- name: OGC API Features Dyrkbar jord
+  url: https://ogcapi.nibio.no/felles/dyrkbarjord
+  generator: ogc_feature_api
+  description: Landsdekkende datasettet som viser arealer som per i dag ikke er fulldyrka jord, men som ut fra agronomiske perspektiv kan dyrkes opp til fulldyrka jord, og som holder kravene til klima og jordkvalitet for plantedyrking.
+  username_secret: clientid_1
+  password_secret: clientkey_1
