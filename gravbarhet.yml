@@ -1,0 +1,9 @@
+metadataId: 6f383993-592d-4c1f-bcaf-e4c905af6ddb
+output_directory: produktspesifikasjon
+product_slug: gravbarhet
+updated: '2026-08-25'
+scopes:
+- name: Gravbarhet
+  url: https://geo.ngu.no/api/features/gravbarhet
+  generator: ogc_feature_api
+  description: OGC API – Features (koblet til datasettet i Geonorge)
