@@ -1,0 +1,418 @@
+{
+  "overview": "Denne produktspesifikasjonen er autogenerert fra metadata i Geonorge og datamodell fra SOSI modellregister og/eller OGC API Features. Noe ekstra informasjon kan ha blitt lagt til gjennom manuell prosess. Produktspesifikasjonen er i henhold til standarden: 'Geografisk informasjon - Dataproduktspesifikasjoner' (ISO19131:2022)",
+  "title": "Gravbarhet",
+  "format": "text/html",
+  "date": {
+    "creation": "2005-05-04",
+    "revision": "2025-03-24"
+  },
+  "language": "nor",
+  "contact": {
+    "individualName": "Sigrid Elvenes",
+    "organizationName": "Norges geologiske undersøkelse",
+    "logo": "https://register.geonorge.no/data/organizations/970188290_NGU_hovedlogo_svart.svg thumbnail.png",
+    "electronicMailAddress": "Sigrid.Elvenes@ngu.no",
+    "role": "owner"
+  },
+  "identificationSection": {
+    "title": "Gravbarhet",
+    "abstract": "Datasettet viser om det er lett eller vanskelig å grave i bunnen. Gravbarhet er basert på sedimentfordeling, og angir både hvor enkelt det er å grave i bunnen og den forventede stabiliteten til det utgravde området. For eksempel vil sandige sedimenter gjerne kollapse fortere etter utgravning enn hva mer finkornig materiale vil.",
+    "purpose": {
+      "summary": "Gravbarhet er et avledet temakart som presenterer kornstørrelsesdata på en spesialtilpasset måte. Datasettet viser om det er lett eller vanskelig å grave i bunnen.",
+      "useCase": {
+        "name": "Bruksområde",
+        "summary": "Datasettet kan anvendes som underlag i overordnet areal- og miljøplanlegging, i forbindelse med installasjoner på sjøbunnen osv."
+      }
+    },
+    "topicCategory": [
+      "Geovitenskapelig informasjon"
+    ],
+    "spatialRepresentationType": "Vektor",
+    "spatialResolution": {
+      "equivalentScale": "10000 20000 50000"
+    },
+    "supplementalInformation": "Datasettet dekker kun enkelte kyst- og fjordområder. Datasettet har varierende detaljeringsgrad, og detaljeringsgraden varierer fra sted til sted.",
+    "uniqueId": "https://data.geonorge.no/sosi/geologi/gravbarhet",
+    "keyword": [
+      "sedimentasjon",
+      "bunnforhold",
+      "fjord",
+      "kyst",
+      "havbunn",
+      "marin",
+      "marine grunnkart",
+      "sjøbunn",
+      "NGU",
+      "stabilitet",
+      "Oslofjorden",
+      "Drammensfjorden",
+      "Hvaler",
+      "Froan",
+      "Andfjorden",
+      "Fosnes",
+      "Vågsfjorden",
+      "Sørøysundet",
+      "Saltstraumen",
+      "Søre Sunnmøre",
+      "Rijpfjorden",
+      "Kongsfjorden",
+      "Norge digitalt",
+      "MarineGrunnkart",
+      "modellbaserteVegprosjekter",
+      "fellesDatakatalog",
+      "Geologi",
+      "Kyst og fiskeri",
+      "LosmasseGrense",
+      "FellesegenskaperLosmasse",
+      "GravbarhetFlate",
+      "GeolAvgrLinje",
+      "geolPavisningstype",
+      "geolPavisningstypeNavn",
+      "sedKornstørrelse",
+      "sedKornstørrelseNavn",
+      "gravbarhet",
+      "gravbarhetNavn"
+    ],
+    "restriction": {
+      "resourceConstraints": {
+        "useLimitations": "Detaljnivået på datasettet tilsier bruk innenfor kartmålestokken: 1:5 000 - 1:50 000."
+      },
+      "legalConstraints": {
+        "accessConstraints": "Åpne data",
+        "useConstraints": "Lisens",
+        "license": "Norsk lisens for offentlige data (NLOD)",
+        "licenseUrl": "http://data.norge.no/nlod/no/1.0"
+      }
+    },
+    "contact": [
+      {
+        "individualName": "Sigrid Elvenes",
+        "organizationName": "Norges geologiske undersøkelse",
+        "electronicMailAddress": "Sigrid.Elvenes@ngu.no",
+        "role": "owner"
+      },
+      {
+        "individualName": "Janne Grete Wesche",
+        "organizationName": "Norges geologiske undersøkelse",
+        "electronicMailAddress": "metadataansvarlig@ngu.no",
+        "role": "pointOfContact"
+      },
+      {
+        "individualName": "Aave Lepland",
+        "organizationName": "Norges geologiske undersøkelse",
+        "electronicMailAddress": "Aave.Lepland@ngu.no",
+        "role": "publisher"
+      }
+    ],
+    "maintenance": "Etter behov",
+    "extent": {
+      "geographicElement": {
+        "westBoundLongitude": "2.0",
+        "eastBoundLongitude": "33.0",
+        "southBoundLatitude": "57.0",
+        "northBoundLatitude": "72.0"
+      },
+      "temporalElement": {
+        "timePeriod": {
+          "beginPosition": "2005-05-04",
+          "endPosition": "2025-03-24"
+        }
+      }
+    },
+    "date": {
+      "creation": "2005-05-04",
+      "publication": "2005-05-04",
+      "revision": "2025-03-24"
+    },
+    "language": "nor"
+  },
+  "scopeSection": [
+    {
+      "specificationScope": {
+        "scopeIdentification": "Hele datasettet",
+        "level": "dataset",
+        "levelDescription": "Gjelder hele datasettet. Hvis omfang ikke er oppgitt under en overskrift, gjelder teksten for hele datasettet og alle leveranser"
+      }
+    },
+    {
+      "specificationScope": {
+        "scopeIdentification": "Gravbarhet",
+        "level": "dataset",
+        "levelDescription": "OGC API – Features (koblet til datasettet i Geonorge)"
+      }
+    }
+  ],
+  "referenceSystemSection": {
+    "spatialReferenceSystem": [
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:25833",
+        "name": "EUREF89 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:25835",
+        "name": "EUREF89 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:32632",
+        "name": "WGS84 UTM sone 32, 2d"
+      },
+      {
+        "code": "EPSG:32633",
+        "name": "WGS84 UTM sone 33, 2d"
+      },
+      {
+        "code": "EPSG:32635",
+        "name": "WGS84 UTM sone 35, 2d"
+      },
+      {
+        "code": "EPSG:4326",
+        "name": "WGS84 Geografisk"
+      },
+      {
+        "code": "EPSG:25832",
+        "name": "EUREF89 UTM sone 32, 2d"
+      }
+    ]
+  },
+  "dataQualitySection": {
+    "scope": {
+      "level": "dataset"
+    },
+    "report": [
+      {
+        "nameOfMeasure": "SOSI produktspesifikasjon: Gravbarhet",
+        "measureDescription": "Dataene er ikke vurdert iht produktspesifikasjonen",
+        "descriptiveResult": "Dataene er ikke vurdert iht produktspesifikasjonen"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "measureDescription": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema",
+        "descriptiveResult": "SOSI-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Sosi applikasjonsskjema",
+        "measureDescription": "GML-filer er ikke vurdert i henhold til applikasjonsskjema",
+        "descriptiveResult": "GML-filer er ikke vurdert i henhold til applikasjonsskjema"
+      },
+      {
+        "nameOfMeasure": "Prosentvis dekning i forhold til datasettets utstrekning",
+        "measureDescription": "Datasettets faktiske kartlagte areal i forhold til datasettets spesifiserte utstrekning",
+        "result": "5"
+      },
+      {
+        "nameOfMeasure": "Prosentvis oppfyllelse av FAIR-prinsipper",
+        "measureDescription": "Angir fullstendighet i forhold til krav fra FAIR-prinsippene (The FAIR Guiding Principles for scientific data management and stewardship)",
+        "result": "96"
+      },
+      {
+        "nameOfMeasure": "FAIR",
+        "result": "Prosentvis oppfyllelse av FAIR-prinsipper: 96%"
+      },
+      {
+        "nameOfMeasure": "Coverage",
+        "result": "Prosentvis dekning i forhold til datasettets utstrekning: 5%"
+      }
+    ]
+  },
+  "maintenanceSection": {
+    "maintenanceAndUpdateFrequency": "Etter behov",
+    "maintenanceAndUpdateStatement": "Kontinuerlig oppdatert"
+  },
+  "dataCaptureAndProductionSection": {
+    "DataAcquisitionAndProcessing": {
+      "processStep": [
+        {
+          "description": "Gravbarhet er et avledet temakart som presenterer kornstørrelsesdata på en spesialtilpasset måte. Kornstørrelsesdata er basert på tolkning av video av sjøbunnen, tolkning av digitale reflektivitetsdata, samt tolkning av analoge og digitale seismiske data. Akustiske data og video er verifisert med analyser av bunnprøver. Detaljerte vanndypsdata har inngått som støtte i tolkningen. Datasettet er digitalisert og tilrettelagt vha. ArcGIS verktøy. Metodikken er beskrevet i egenskapsfeltene Målemetode og GeolPavisningstype. Temakoder og egenskaper følger i hovedsak SOSI-standarden."
+        }
+      ]
+    }
+  },
+  "portrayal": {
+    "name": "Tegneregler",
+    "linkage": "https://register.geonorge.no/tegneregler/gravbarhet"
+  },
+  "deliverySection": [
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Egen nedlastningsside",
+          "deliveryService": {
+            "serviceEndpoint": "http://geo.ngu.no/download/order?dataset=706",
+            "serviceProperty": {
+              "type": "Egen nedlastningsside",
+              "value": "WWW:DOWNLOAD-1.0-http--download"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Geonorge nedlastning",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.ngu.no/api/capabilities/",
+            "serviceProperty": {
+              "type": "Geonorge nedlastning",
+              "value": "GEONORGE:DOWNLOAD"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Atom Feed",
+          "deliveryService": {
+            "serviceEndpoint": "https://nedlasting.ngu.no/api/atom/6f383993-592d-4c1f-bcaf-e4c905af6ddb",
+            "serviceProperty": {
+              "type": "Atom Feed",
+              "value": "W3C:AtomFeed"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "FGDB"
+          },
+          {
+            "formatName": "GML"
+          },
+          {
+            "formatName": "SOSI"
+          }
+        ]
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Bunnsedimenter (kornstørrelse) detaljert",
+          "deliveryService": {
+            "serviceEndpoint": "https://geo.ngu.no/mapserver/MarineGrunnkartWMS?REQUEST=GetCapabilities&SERVICE=WMS",
+            "serviceProperty": {
+              "type": "Bunnsedimenter (kornstørrelse) detaljert",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "image/png",
+            "version": "1.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Marine grunnkart - datadekning",
+          "deliveryService": {
+            "serviceEndpoint": "https://geo.ngu.no/mapserver/MarineGrunnkartWMS?REQUEST=GetCapabilities&SERVICE=WMS",
+            "serviceProperty": {
+              "type": "Marine grunnkart - datadekning",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "image/png",
+            "version": "1.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Gravbarhet",
+          "deliveryService": {
+            "serviceEndpoint": "https://geo.ngu.no/mapserver/MarineGrunnkartWMS?REQUEST=GetCapabilities&SERVICE=WMS",
+            "serviceProperty": {
+              "type": "Gravbarhet",
+              "value": "Tjenestelag"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "image/png",
+            "version": "1.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    },
+    {
+      "delivery": {
+        "deliveryMedium": {
+          "deliveryMediumName": "Marine grunnkart WMS",
+          "deliveryService": {
+            "serviceEndpoint": "https://geo.ngu.no/mapserver/MarineGrunnkartWMS?REQUEST=SERVICE=WMS&request=GetCapabilities",
+            "serviceProperty": {
+              "type": "Marine grunnkart WMS",
+              "value": "WMS-tjeneste"
+            }
+          }
+        },
+        "deliveryFormat": [
+          {
+            "formatName": "image/png",
+            "version": "1.3.0"
+          }
+        ],
+        "deliveryScope": "Tjeneste"
+      }
+    }
+  ],
+  "metadataSection": {
+    "metadataStandard": "ISO19115",
+    "metadataStandardVersion": "2003",
+    "metadataDate": "2026-08-24",
+    "language": "nor",
+    "contact": {
+      "organizationName": "Norges geologiske undersøkelse",
+      "individualName": "Janne Grete Wesche",
+      "logo": "https://register.geonorge.no/data/organizations/970188290_NGU_hovedlogo_svart.svg thumbnail.png",
+      "electronicMailAddress": "metadataansvarlig@ngu.no",
+      "role": "pointOfContact"
+    },
+    "metadataIdentifier": {
+      "authority": "Geonorge",
+      "code": "6f383993-592d-4c1f-bcaf-e4c905af6ddb",
+      "codeSpace": "https://kartkatalog.geonorge.no/metadata/",
+      "metadataLinkage": "https://kartkatalog.geonorge.no/metadata/6f383993-592d-4c1f-bcaf-e4c905af6ddb"
+    }
+  }
+}
