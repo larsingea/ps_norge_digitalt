@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:ogcapifeaturesdyrkbarjord="https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/1.0" elementFormDefault="qualified" targetNamespace="https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/1.0" version="1.0">
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Dyrkbar jord" substitutionGroup="gml:AbstractFeature" type="ogcapifeaturesdyrkbarjord:Dyrkbar jordType"/>
+  <complexType name="Dyrkbar jordType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="geometry" type="gml:SurfacePropertyType"/>
+          <element minOccurs="0" name="lokalId" type="integer"/>
+          <element minOccurs="0" name="dyrkbarJord" type="integer">
+            <annotation>
+              <documentation>dyrkbarJord</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="myrTorv" type="integer">
+            <annotation>
+              <documentation>myrTorv</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="verneform" type="string">
+            <annotation>
+              <documentation>verneform</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="planeringsjord" type="integer">
+            <annotation>
+              <documentation>planeringsjord</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="fulldyrka2008" type="integer">
+            <annotation>
+              <documentation>fulldyrka2008</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="årsversjon" type="integer"/>
+          <element minOccurs="0" name="informasjon" type="string"/>
+          <element minOccurs="0" name="områdeId" type="integer">
+            <annotation>
+              <documentation>områdeId</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="Dyrkbar jordPropertyType">
+    <sequence minOccurs="0">
+      <element ref="ogcapifeaturesdyrkbarjord:Dyrkbar jord"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+</schema>

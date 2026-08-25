@@ -2,8 +2,8 @@
 <ShapeChangeConfiguration xmlns="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.interactive-instruments.de/ShapeChange/Configuration/1.1 https://shapechange.net/resources/schema/ShapeChangeConfiguration.xsd">
  <input id="INPUT">
   <parameter name="inputModelType" value="SCXML" />
-  <parameter name="inputFile" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/filleveranse/schema/model.scxml" />
-  <parameter name="appSchemaNameRegex" value="^filleveranse$" />
+  <parameter name="inputFile" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/schema/model.scxml" />
+  <parameter name="appSchemaNameRegex" value="^ogc-api-features-dyrkbar-jord$" />
   <parameter name="publicOnly" value="true" />
   <parameter name="checkingConstraints" value="disabled" />
   <parameter name="sortedSchemaOutput" value="true" />
@@ -13,11 +13,11 @@
  </input>
  <log>
   <parameter name="reportLevel" value="INFO" />
-  <parameter name="logFile" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/filleveranse/schema/log.xml" />
+  <parameter name="logFile" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/schema/log.xml" />
  </log>
  <targets>
   <TargetXmlSchema class="de.interactive_instruments.shapechange.core.target.xmlschema.XmlSchema" mode="enabled" inputs="INPUT">
-   <targetParameter name="outputDirectory" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/filleveranse/schema/xsd" />
+   <targetParameter name="outputDirectory" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/schema/xsd" />
    <targetParameter name="sortedOutput" value="true" />
    <targetParameter name="defaultEncodingRule" value="sosi" />
    <targetParameter name="documentationTemplate" value="[[documentation]]" />
@@ -38,10 +38,10 @@
    <xi:include href="file:///home/runner/work/ps_norge_digitalt/ps_norge_digitalt/.psactions/shapechange/data/StandardMapEntries_sosi.xml" />
   </TargetXmlSchema>
   <Target class="de.interactive_instruments.shapechange.core.target.json.JsonSchemaTarget" mode="enabled" inputs="INPUT">
-   <targetParameter name="outputDirectory" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/filleveranse/schema/jsonschema" />
+   <targetParameter name="outputDirectory" value="/home/runner/work/ps_norge_digitalt/ps_norge_digitalt/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord/schema/jsonschema" />
    <targetParameter name="sortedOutput" value="true" />
    <targetParameter name="jsonSchemaVersion" value="draft-07" />
-   <targetParameter name="jsonBaseUri" value="https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbarjord/filleveranse" />
+   <targetParameter name="jsonBaseUri" value="https://skjema.geonorge.no/SOSI/produktspesifikasjon/dyrkbarjord/ogc-api-features-dyrkbar-jord" />
    <targetParameter name="entityTypeName" value="@type" />
    <targetParameter name="defaultEncodingRule" value="sosiJson" />
    <targetParameter name="documentationTemplate" value="[[documentation]]" />

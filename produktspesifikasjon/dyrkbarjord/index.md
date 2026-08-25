@@ -95,11 +95,11 @@ Dyrkbar jord har lovmessige vern gjennom Jordlova.
 
 **Nivåbeskrivelse**: Filer levert som FGDB, SOSI og Shape, gjennom Geonorge kartkatalog og massiv-klient, samt Atom Feed.
 
-### Datamodell fra GPKG
+### OGC API Features Dyrkbar jord
 
 **Nivå**: dataset
 
-**Nivåbeskrivelse**: Tom GPKG - mal for dyrkbar jord
+**Nivåbeskrivelse**: Landsdekkende datasettet som viser arealer som per i dag ikke er fulldyrka jord, men som ut fra agronomiske perspektiv kan dyrkes opp til fulldyrka jord, og som holder kravene til klima og jordkvalitet for plantedyrking.
 
 ## Datainnhold og struktur
 
@@ -115,15 +115,15 @@ Dyrkbar jord har lovmessige vern gjennom Jordlova.
 
 ➡️ [Se full datamodell for omfang "Filleveranse" (diagram per pakke og objektkatalog)](filleveranse/objektkatalog.html)
 
-### Datamodell - Datamodell fra GPKG
+### Datamodell - OGC API Features Dyrkbar jord
 
 
 
-<a href="datamodell-fra-gpkg/datamodell-fra-gpkg_feature_catalogue.png" title="Klikk for stor visning"><img src="datamodell-fra-gpkg/datamodell-fra-gpkg_feature_catalogue.png" alt="Datamodell Datamodell fra GPKG" style="max-width: 100%; height: auto;" /></a>
+<a href="ogc-api-features-dyrkbar-jord/ogc-api-features-dyrkbar-jord_feature_catalogue.png" title="Klikk for stor visning"><img src="ogc-api-features-dyrkbar-jord/ogc-api-features-dyrkbar-jord_feature_catalogue.png" alt="Datamodell OGC API Features Dyrkbar jord" style="max-width: 100%; height: auto;" /></a>
 
 
 
-➡️ [Se full datamodell for omfang "Datamodell fra GPKG" (diagram per pakke og objektkatalog)](datamodell-fra-gpkg/objektkatalog.html)
+➡️ [Se full datamodell for omfang "OGC API Features Dyrkbar jord" (diagram per pakke og objektkatalog)](ogc-api-features-dyrkbar-jord/objektkatalog.html)
 
 ## Referansesystem
 
@@ -206,7 +206,7 @@ Dyrkbar jord har lovmessige vern gjennom Jordlova.
 
 **Metadatastandardversjon**: 2003
 
-**Metadatadato**: 2026-08-18
+**Metadatadato**: 2026-08-24
 
 **språk**: nor
 
